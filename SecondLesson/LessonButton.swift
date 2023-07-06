@@ -54,8 +54,6 @@ class LessonButton: UIButton {
             completion: completion)
     }
     
-    // MARK: - Public methods
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         animate(isHighlighted: true)
