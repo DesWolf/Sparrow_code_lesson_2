@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }()
     
     lazy var secondButton: LessonButton = {
-        let button  = LessonButton()
+        let button  = LessonButton(type: .custom)
         
         button.setTitle("Second Mdium Button", for: .normal)
         
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }()
     
     lazy var thirdButton: LessonButton = {
-        let button  = LessonButton()
+        let button  = LessonButton(type: .custom)
         
         button.setTitle("Third Button", for: .normal)
         button.addTarget(self, action: #selector(showBottomView), for: .touchUpInside)
